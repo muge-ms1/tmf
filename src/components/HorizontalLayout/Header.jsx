@@ -20,7 +20,7 @@ import logoLarge from "../../assets/images/logo-large-tmf.png"
 
 
 const Header = props => {
-  const [menu, setMenu] = useState(false);
+  // const [menu, setMenu] = useState(false);
   const [isSearch, setSearch] = useState(false);
   
   function toggleFullscreen() {

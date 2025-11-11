@@ -1,19 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { ArrowLeftOutlined } from "@ant-design/icons";
-import {
-  Form,
-  Button,
-  Input,
-  Row,
-  Col,
-  Card,
-  Typography,
-  Divider,
-  Space,
-} from "antd";
 import { notification } from "antd";
-import { GET, POST, DELETE } from "helpers/api_helper";
+import { GET } from "helpers/api_helper";
 import { USERS } from "helpers/url_helper";
 import GenericCollapse from "components/Common/Collapse";
 import Loader from "components/Common/Loader";
@@ -22,8 +11,6 @@ const Viewuser = () => {
   const navigate = useNavigate();
   const [loader, setLoader] = useState(false);
   const [user, userData] = useState({});
-  const [showConfirm, setShowConfirm] = useState(false);
-  const [deleteLoader, setDeleteLoader] = useState(false);
  
   const getUserList = async () => {
     try {

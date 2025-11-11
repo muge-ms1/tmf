@@ -53,7 +53,6 @@ const ViewArea = () => {
   const [reorderLoader, setReorderLoader] = useState(false);
   const [selectedColumn, setSelectedColumn] = useState([]);
   const [filterOption, setFilterOption] = useState({});
-  const [selectedLine, setSelectedLine] = useState(null);
 
   const { useBreakpoint } = Grid;
   const screens = useBreakpoint();
@@ -265,10 +264,10 @@ const ViewArea = () => {
     }
   };
 
-  const handlereOrder = (value) => {
-    setSelectedLine(value);
-    //Need to add filter logic here
-  };
+  // const handleeOrder = (value) => {
+  //   setSelectedLine(value);
+  //   //Need to add filter logic here
+  // };
 
   return (
     <div className="page-content">

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Row, Col, FormGroup } from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 import { connect } from "react-redux";
 import {
@@ -30,7 +30,7 @@ import {
   layoutModeTypes,
   layoutWidthTypes,
   topBarThemeTypes,
-  leftBarThemeImageTypes,
+  // leftBarThemeImageTypes,
   leftSidebarTypes,
   leftSideBarThemeTypes,
 } from "../../constants/layout";

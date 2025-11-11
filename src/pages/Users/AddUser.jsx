@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { Select, Form, Input, Button, Divider, Switch, message } from "antd";
+import { Select, Form, Input, Button, Switch, message } from "antd";
 import {
   ArrowLeftOutlined,
-  FileAddOutlined,
   ReloadOutlined,
 } from "@ant-design/icons";
 import {
@@ -14,7 +13,7 @@ import {
 } from "helpers/url_helper";
 import { GET, POST, PUT } from "helpers/api_helper";
 import Loader from "components/Common/Loader";
-import { debounce, set } from "lodash";
+import { debounce } from "lodash";
 const { Option } = Select;
 
 const AddUser = () => {

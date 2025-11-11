@@ -44,7 +44,7 @@ const TableList = ({
 }) => {
   const [tableData, setTableData] = useState(data);
   const navigate = useNavigate();
-  const [api, contextHolder] = notification.useNotification();
+  const [contextHolder] = notification.useNotification();
   
   useEffect(() => {
     setTableData(data);

@@ -110,28 +110,28 @@ const AddExpense = () => {
       };
       
 
-    const handleDelete = async () => {
-        setLoading(true);
-        try {
-            const response = await DELETE(EXPENSE_TYPE_DETAIL(id)); // Delete using the DELETE helper
-            if (response.status === 200) {
-                notification.success({
-                    message: "Success",
-                    description: "Expense deleted successfully!",
-                });
-                navigate("/expense/list");
-            } else {
-                throw new Error("Failed to delete expense");
-            }
-        } catch (error) {
-            notification.error({
-                message: "Error",
-                description: "Failed to delete expense.",
-            });
-        } finally {
-            setLoading(false);
-        }
-    };
+    // const handleDelete = async () => {
+    //     setLoading(true);
+    //     try {
+    //         const response = await DELETE(EXPENSE_TYPE_DETAIL(id)); // Delete using the DELETE helper
+    //         if (response.status === 200) {
+    //             notification.success({
+    //                 message: "Success",
+    //                 description: "Expense deleted successfully!",
+    //             });
+    //             navigate("/expense/list");
+    //         } else {
+    //             throw new Error("Failed to delete expense");
+    //         }
+    //     } catch (error) {
+    //         notification.error({
+    //             message: "Error",
+    //             description: "Failed to delete expense.",
+    //         });
+    //     } finally {
+    //         setLoading(false);
+    //     }
+    // };
 
    
 

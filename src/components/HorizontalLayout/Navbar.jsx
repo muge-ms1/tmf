@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-import React, { useState, useEffect } from "react";
-import { Row, Col, Collapse } from "reactstrap";
+import React, { useEffect } from "react";
+import { Collapse } from "reactstrap";
 import { Link } from "react-router-dom";
 import withRouter from "components/Common/withRouter";
-import classname from "classnames";
+// import classname from "classnames";
 
 
 import { connect } from "react-redux";

@@ -38,7 +38,7 @@ const VerticalLayout = (props) => {
   
   const location = useLocation();
   const navigate = useNavigate();
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   
   const {
     token: { colorBgContainer, borderRadiusLG },

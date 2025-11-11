@@ -13,12 +13,11 @@ import Loader from "components/Common/Loader";
 import ColumnDropdown from "../../../components/Common/ColumnDropdown";
 import CommonSearch from "components/Common/Search";
 import { debounce } from "lodash";
-import GenericCollapse from "components/Common/Collapse";
 import SwipeablePanel from "components/Common/SwipeablePanel";
 import { EllipsisOutlined } from "@ant-design/icons";
 import InfiniteScroll from "react-infinite-scroll-component";
 import LineCollapseContent from "components/Common/LineCollapseContent";
-import { Modal, Select,Switch } from "antd";
+import { Switch } from "antd";
 
 let header = [
   {
@@ -73,10 +72,6 @@ const ViewLine = () => {
     ],
   });
   const [selectedColumn, setSelectedColumn] = useState([]);
-   const [filteredData, setFilteredData] = useState([]); // 🆕 filtered data
-  const [branchOptions, setBranchOptions] = useState([]); // 🆕 store unique branch names
-  const [selectedBranch, setSelectedBranch] = useState(null); // 🆕 selected branch
-  const [branchModalVisible, setBranchModalVisible] = useState(false); // 🆕 modal visibility
 const [isDragMode, setIsDragMode] = useState(true); // switch toggle state
 
 

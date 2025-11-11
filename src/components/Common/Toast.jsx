@@ -12,13 +12,13 @@ function CustomToast(message, type, position)  {
       }
      
     // var options = customOption ? customOption : toastOptions;
-  if(type=="success"){
+  if(type==="success"){
     toast.success(message, {...toastOptions,className: 'toast-theme-success'})
   }
-  if(type=="error"){
+  if(type==="error"){
     toast.error(message, {...toastOptions,className: 'toast-theme-error'});
   }
-  if(type=="info"){
+  if(type==="info"){
     toast.info(message, toastOptions)
   }
   

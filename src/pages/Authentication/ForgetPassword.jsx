@@ -3,7 +3,7 @@ import React from "react";
 import { Row, Col, Alert, Card, CardBody, Container, FormFeedback, Input, Label, Form } from "reactstrap";
 
 //redux
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import withRouter from "components/Common/withRouter";
 
@@ -19,7 +19,7 @@ const ForgetPasswordPage = props => {
   //meta title
   document.title = "Forget Password";
 
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const validation = useFormik({
     // enableReinitialize : use this flag when initial values needs to be changed

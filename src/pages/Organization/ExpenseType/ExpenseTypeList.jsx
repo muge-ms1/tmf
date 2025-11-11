@@ -7,8 +7,6 @@ import GenericCollapse from "components/Common/Collapse";
 import { MoreOutlined } from "@ant-design/icons";
 import { Button, Flex, notification, Input, Switch } from "antd";
 
-
-
 const ExpenseTypeList = () => {
   const [tableData, setTableData] = useState([]);
   const [loading, setLoading] = useState(true);

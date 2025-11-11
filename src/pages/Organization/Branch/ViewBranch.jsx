@@ -12,7 +12,7 @@ import { GET_BRANCHES } from "helpers/api_helper";
 import { ADD_BRANCH } from "helpers/url_helper";
 import { useParams, useNavigate } from "react-router-dom";
 import Loader from "components/Common/Loader";
-const { Title, Text, Link } = Typography;
+const { Text, Link } = Typography;
 
 const ViewBranch = () => {
   const params = useParams();
