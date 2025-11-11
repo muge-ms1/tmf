@@ -1,0 +1,9 @@
+/* Prevent scrollbars when floating button tooltip appears */
+.ant-float-btn-group,
+.ant-float-btn {
+  overflow: hidden !important;
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
